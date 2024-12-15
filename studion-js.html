@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <button
+      onclick="
+    console.log(`Cart quality: ${cartQuantity}`); // показує скільки загалом
+    ">
+      Show
+    </button>
+
+    <button
+      onclick="
+    cartQuantity++; //додає 1 шт або можна записати cartQuantity = cartQuantity +1;
+    console.log(`Cart quality: ${cartQuantity} `);
+    ">
+      Add to card
+    </button>
+
+    <button
+      onclick="
+    cartQuantity += 2; //додає 2 шт або можна записати cartQuantity = cartQuantity +2;
+    console.log(`Cart quality: ${cartQuantity} `);
+    ">
+      +2
+    </button>
+
+    <button
+      onclick="
+    cartQuantity += 3; //додає 3 шт або можна записати cartQuantity = cartQuantity +3;
+    console.log(`Cart quality: ${cartQuantity} `);
+    ">
+      +3
+    </button>
+
+    <button
+      onclick="
+    cartQuantity = 0; // скидає на 0
+     console.log(`Cart was reset.`);
+     console.log(`Cart quality : ${cartQuantity}`);
+    ">
+      Reset
+    </button>
+
+    <script>
+      let cartQuantity = 0; // стартове значення
+    </script>
+  </body>
+</html>
